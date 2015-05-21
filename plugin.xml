@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="it.bankadati.mib.systemproperties"
+    version="0.0.1">
+    <name>SystemProperties</name>
+    <description>Cordova SystemProperties Plugin</description>
+    <keywords>cordova,SystemProperties</keywords>
+
+    <engines>
+            <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/systemproperties.js" name="systemproperties">
+        <clobbers target="window.SystemProperties" />
+    </js-module>
+
+    <!-- wp8 -->
+    <platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+            <feature name="SystemProperties">
+                <param name="wp-package" value="SystemProperties"/>
+            </feature>
+        </config-file>
+        <source-file src="src/wp/SystemProperties.cs" />
+    </platform>
+
+</plugin>

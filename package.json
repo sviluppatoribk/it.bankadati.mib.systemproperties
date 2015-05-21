@@ -1,0 +1,19 @@
+{
+    "version": "0.0.1",
+    "name": "SystemProperties",
+    "cordova_name": "SystemProperties",
+    "description": "Cordova SystemProperties Plugin",
+    "license": "Bankadati",
+    "keywords": [
+        "cordova",
+        "SystemProperties"
+    ],
+    "platforms": [
+        "wp8"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
